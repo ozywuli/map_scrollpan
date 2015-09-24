@@ -1319,8 +1319,57 @@ body {
 }
 
 #map {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	height: 100vh;
+}
+
+.topbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	z-index: 100;
+}
+
+article {
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: auto;
+	width: 240px;
+}
+
+.quiet {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.scroll {
+	display: block;
+	text-align: center;
+}
+
+.sections {
+	position: relative;
+	background: rgba(255, 255, 255, 0.5);
+	width: 100%;
+}
+
+section {
+	padding: 20px;
+	color: rgba(0, 0, 0, 0.5);
+	transition: background 500ms, color 500ms;
+}
+
+section.active {
+	background: #fff;
+	color: #404040;
 }
 

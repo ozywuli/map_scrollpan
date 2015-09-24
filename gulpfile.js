@@ -17,8 +17,9 @@ var uglify = require('gulp-uglify');
 var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
-var reactify = require('reactify');
 var streamify = require('gulp-streamify');
+
+var handlebars = require('gulp-handlebars');
 
 // var neatPath = neat.with('node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets')
 
@@ -45,11 +46,17 @@ gulp.task('html-build', function() {
 // CSS
 gulp.task('css', function() {
   return gulp.src('src/assets/scss/main.scss')
+    .pipe(plumber({
+        errorHandler: function (err) {
+            console.log(err);
+            this.emit('end');
+        }
+    }))
     .pipe(sass({
         includePaths: require('node-neat').includePaths,
         outputStyle: 'expanded'
     }))
-    .pipe( plumber() )
+
     .pipe( autoprefixer('last 2 version') )
     .pipe( cmq({
         log: true
@@ -70,7 +77,6 @@ gulp.task('css-build', function() {
 gulp.task('js', function() {
   browserify({
     entries: ['src/assets/js/main.js'],
-    transform: [reactify],
   })
     .bundle()
     .pipe(source('main.js'))
@@ -106,7 +112,6 @@ gulp.task('watch', function() {
 
   var watcher  = watchify(browserify({
     entries: ['src/assets/js/main.js'],
-    transform: [reactify],
     debug: true,
     cache: {}, packageCache: {}, fullPaths: true
   }));
