@@ -1316,6 +1316,7 @@ html,
 body {
 	width: 100%;
 	height: 100%;
+	font-family: "Source Sans Pro", sans-serif;
 }
 
 a {
@@ -1331,6 +1332,13 @@ a {
 	width: 100%;
 	height: 100%;
 	height: 100vh;
+}
+
+.leaflet-container .leaflet-control-zoomslider {
+	position: fixed;
+	right: 10px;
+	top: 50%;
+	margin-top: -100px;
 }
 
 .topbar {

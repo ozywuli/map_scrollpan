@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var del = require('del');
+var fileinclude = require('gulp-file-include');
 var minifyHTML = require('gulp-minify-html');
 var sass = require('gulp-sass');
 var neat = require('node-neat').includePaths;
@@ -25,7 +26,11 @@ var handlebars = require('gulp-handlebars');
 
 // HTML
 gulp.task('html', function() {
-    return gulp.src('src/*.html')
+    return gulp.src('src/index.html')
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
         .pipe(gulp.dest('dev'));
 
 });
@@ -111,7 +116,7 @@ gulp.task('default', function() {
 
 // Watch for changes during development
 gulp.task('watch', function() {
-    gulp.watch('src/*.html', ['html']);
+    gulp.watch(['src/*.html', 'src/partials/*'], ['html']);
 
     // Watch .scss files
     gulp.watch('src/assets/scss/**/*', ['css']);

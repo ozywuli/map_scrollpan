@@ -16,6 +16,7 @@ var map = L.mapbox.map('map', 'mapbox.streets', {
     zoomControl: false
 });
 map.scrollWheelZoom.disable();
+L.control.zoomslider().addTo(map);
 
 
 
