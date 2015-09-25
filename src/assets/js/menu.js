@@ -2,9 +2,14 @@
 
 module.exports = function() {
 
+var $navToggle = $('.menu__link--nav');
+var $nav = $('.nav');
 
-console.log(1);
+$navToggle.on('click', function(e) {
+  e.preventDefault();
+  $nav.hasClass('nav--active') ? $nav.removeClass('nav--active') : $nav.addClass('nav--active');
 
+});
 
 
 }

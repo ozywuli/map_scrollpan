@@ -1,6 +1,43 @@
 var menu = require('./menu.js');
 
-menu();
+    menu();
+
+
+var $aboutToggle = $('.menu__link--about');
+var $aboutPage = $('.about-page');
+
+
+$aboutToggle.on('click', function(e) {
+
+  console.log(1);
+
+  $aboutPage.hasClass('active') ? $aboutPage.removeClass('active') : $aboutPage.addClass('active')
+
+});
+
+
+$(function(){
+
+
+
+
+  // Bind an event to window.onhashchange that, when the hash changes, gets the
+  // hash and adds the class "selected" to any matching nav link.
+  $(window).on('hashchange', function(){
+
+
+
+
+
+
+
+  }).trigger('hashchange');
+  
+  // Since the event is only triggered when the hash changes, we need to trigger
+  // the event now, to handle the hash the page may have loaded with.
+
+  
+});
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiYW9zaWthIiwiYSI6IjQzRGIxeEkifQ.7OvmyBbXwwt9Qxjlh9Qd3w';
 // In this case, we just hardcode data into the file. This could be dynamic.
@@ -76,14 +113,13 @@ function setId(newId) {
 // call from firing constantly.
 
 $(window).on('scroll', function() {
-  console.log(1);
+
 
     // var narrativeHeight = narrative.offsetHeight;    
 
     var narrativeHeight = $narrative.height();
     var newId = currentId;
 
-    console.log(narrativeHeight);
 
 
     // Find the section that's currently scrolled-to.

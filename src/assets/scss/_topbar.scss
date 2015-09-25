@@ -5,5 +5,21 @@
   left: 0;
   width: 100%;
   background: #FFF;
-  z-index: 100;
+  @include z-index("topbar");
 }
+  .topbar__title {
+    text-align: center;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+    .menu__item {
+      display: inline-block;
+    }
+      .menu__link {
+        display: block;
+        padding: 10px;
+      }

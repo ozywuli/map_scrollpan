@@ -90,6 +90,13 @@ gulp.task('js-build', function() {
 });
 
 
+// Data
+gulp.task('data', function() {
+  return gulp.src('src/assets/data/*')
+    .pipe( gulp.dest('dev/assets/data') )
+})
+
+
 // Clean
 // gulp.task('clean', function(cb) {
 //     del(['dist'], cb)
@@ -99,7 +106,7 @@ gulp.task('js-build', function() {
 
 // Initialize development
 gulp.task('default', function() {
-    gulp.start('html', 'css', 'js');
+    gulp.start('html', 'css', 'js', 'data');
 });
 
 // Watch for changes during development
@@ -108,6 +115,8 @@ gulp.task('watch', function() {
 
     // Watch .scss files
     gulp.watch('src/assets/scss/**/*', ['css']);
+
+    gulp.watch('src/assets/data/*', ['data']);
 
 
   var watcher  = watchify(browserify({
