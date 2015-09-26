@@ -1,5 +1,7 @@
 var debounce = require('./debounce.js');
-
+var template = require("./template.hbs");
+$list = template({ name: "L" });
+$('.topbar').append($list);
 
 (function() {
 
@@ -19,8 +21,11 @@ map.scrollWheelZoom.disable();
 L.control.zoomslider().addTo(map);
 
 
+console.log(1);
+
 
 $.getJSON('assets/data/destinations.geojson', function(data) {
+
 
 var placesLayer = L.mapbox.featureLayer(data)
     .addTo(map);

@@ -16,32 +16,3 @@
 @import 'narrative';
 @import 'about';
 
-article {
-  position: relative;
-  top:0;
-  left:0;
-  overflow:auto;
-  width: 240px;
-}
-.quiet {
-  color:rgba(0,0,0,0.5);
-  }
-.scroll {
-  display:block;
-  text-align:center;
-  }
-.sections {
-  position: relative;
-  background:rgba(255,255,255,0.5);
-  width: 100%;
-  }
-section {
-  padding:20px;
-  color:rgba(0,0,0,0.5);
-  -webkit-transition:background 500ms, color 500ms;
-          transition:background 500ms, color 500ms;
-  }
-section.active {
-  background:#fff;
-  color:#404040;
-  }

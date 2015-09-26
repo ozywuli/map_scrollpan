@@ -1335,10 +1335,7 @@ a {
 }
 
 .leaflet-container .leaflet-control-zoomslider {
-	position: fixed;
-	right: 10px;
-	top: 50%;
-	margin-top: -100px;
+	display: none;
 }
 
 .topbar {
@@ -1382,6 +1379,19 @@ a {
 	transform: translate3d(100%, 0, 0);
 }
 
+#narrative {
+	position: relative;
+	z-index: 5;
+}
+
+section {
+	margin: 10px 10px;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px 1px #000;
+	background: #FFF;
+}
+
 .about-page {
 	position: fixed;
 	top: 0;
@@ -1402,37 +1412,15 @@ a {
 	visibility: visible;
 }
 
-article {
-	position: relative;
-	top: 0;
-	left: 0;
-	overflow: auto;
-	width: 240px;
-}
+@media all and (min-width: 900px) {
 
-.quiet {
-	color: rgba(0, 0, 0, 0.5);
-}
-
-.scroll {
+.leaflet-container .leaflet-control-zoomslider {
 	display: block;
-	text-align: center;
+	position: fixed;
+	right: 10px;
+	top: 50%;
+	margin-top: -100px;
 }
 
-.sections {
-	position: relative;
-	background: rgba(255, 255, 255, 0.5);
-	width: 100%;
-}
-
-section {
-	padding: 20px;
-	color: rgba(0, 0, 0, 0.5);
-	transition: background 500ms, color 500ms;
-}
-
-section.active {
-	background: #fff;
-	color: #404040;
 }
 

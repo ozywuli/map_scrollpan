@@ -20,13 +20,13 @@ var browserify = require('browserify');
 var watchify = require('watchify');
 var streamify = require('gulp-streamify');
 
-var handlebars = require('gulp-handlebars');
+var hbsfy = require('hbsfy');
 
 // var neatPath = neat.with('node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets')
 
 // HTML
 gulp.task('html', function() {
-    return gulp.src('src/index.html')
+    return gulp.src('src/*.html')
         .pipe(fileinclude({
           prefix: '@@',
           basepath: '@file'
@@ -82,11 +82,19 @@ gulp.task('css-build', function() {
 gulp.task('js', function() {
   browserify({
     entries: ['src/assets/js/main.js'],
+    transform: [hbsfy]
   })
     .bundle()
     .pipe(source('main.js'))
     .pipe(gulp.dest('dev/assets/js'));
 });
+
+
+
+
+
+
+
 
 gulp.task('js-build', function() {
     return gulp.src('dev/assets/js/*')
@@ -116,12 +124,16 @@ gulp.task('default', function() {
 
 // Watch for changes during development
 gulp.task('watch', function() {
+
+    gulp.start('html', 'css', 'js', 'data');
+
     gulp.watch(['src/*.html', 'src/partials/*'], ['html']);
 
     // Watch .scss files
     gulp.watch('src/assets/scss/**/*', ['css']);
 
     gulp.watch('src/assets/data/*', ['data']);
+
 
 
   var watcher  = watchify(browserify({

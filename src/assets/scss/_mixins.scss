@@ -1,4 +1,9 @@
 // ==================================================
+// Mixins
+// ==================================================
+
+
+
 // z-index
 // ==================================================
 
@@ -12,9 +17,35 @@
 
 
 $z-index: (
-  "topbar"     : 20,
-  "nav"            : 15,
-  'about': 10
+  "topbar": 20,
+  "nav": 15,
+  'about': 10,
+  'narrative': 5
 );
 
 
+// Media Queries
+// ==================================================
+
+$breakpoints: (
+  'small': 600px,
+  'medium': 900px,
+  'large': 1200px,
+  'xlarge': 1500px
+);
+
+@mixin respond-to($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+
+  @if $value != null {
+    @media all and (min-width: $value) {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+
+}
