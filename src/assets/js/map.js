@@ -1,7 +1,11 @@
 var debounce = require('./debounce.js');
+
+
 var template = require("./template.hbs");
-$list = template({ name: "L" });
+$list = template({ name: "Ozy" });
 $('.topbar').append($list);
+
+
 
 (function() {
 
@@ -19,9 +23,6 @@ var map = L.mapbox.map('map', 'mapbox.streets', {
 });
 map.scrollWheelZoom.disable();
 L.control.zoomslider().addTo(map);
-
-
-console.log(1);
 
 
 $.getJSON('assets/data/destinations.geojson', function(data) {

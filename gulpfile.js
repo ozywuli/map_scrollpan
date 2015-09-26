@@ -138,6 +138,7 @@ gulp.task('watch', function() {
 
   var watcher  = watchify(browserify({
     entries: ['src/assets/js/main.js'],
+    transform: [hbsfy],
     debug: true,
     cache: {}, packageCache: {}, fullPaths: true
   }));
