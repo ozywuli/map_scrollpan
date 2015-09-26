@@ -1,9 +1,6 @@
 var debounce = require('./debounce.js');
 
 
-var template = require("./template.hbs");
-$list = template({ name: "Ozy" });
-$('.topbar').append($list);
 
 
 
@@ -25,8 +22,9 @@ map.scrollWheelZoom.disable();
 L.control.zoomslider().addTo(map);
 
 
-$.getJSON('assets/data/destinations.geojson', function(data) {
 
+
+$.getJSON('assets/data/destinations.geojson', function(data) {
 
 var placesLayer = L.mapbox.featureLayer(data)
     .addTo(map);
@@ -108,7 +106,29 @@ placesLayer.eachLayer(function(layer) {
 
 
 
-}); // end geojson ajax call
+}).done(getInfo()); // end geojson ajax call
+
+
+
+// Ajax call for additional info about each marker
+function getInfo() {
+
+    $.getJSON('assets/data/info.json', function(info) {
+
+        console.log(info.destinations);
+
+        var Handlebars = require("hbsfy/runtime");
+        Handlebars.registerHelper("safe", function(description) {
+          return new Handlebars.SafeString(description)
+        });
+
+
+        var template = require("./template.hbs");
+        $list = template(info);
+        $('.sections').append($list);
+    });
+}
+
 
 
 
