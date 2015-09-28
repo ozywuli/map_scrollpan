@@ -5,10 +5,33 @@
   left: 0;
   width: 100%;
   background: #FFF;
-  @include z-index("topbar");
+  z-index: 150;
+  padding: 0 10px;
+  font-size: 1.5rem;
+
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  @include respond-to('medium') {
+      @include z-index("topbar");
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+
+  }
 }
   .topbar__title {
-    text-align: center;
+    text-align: left;
+    font-size: 1.5rem;
+
+    @include respond-to('medium') {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 
   .menu {
@@ -21,5 +44,5 @@
     }
       .menu__link {
         display: block;
-        padding: 10px;
+        padding: 17px 10px;
       }

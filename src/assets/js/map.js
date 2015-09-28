@@ -56,7 +56,11 @@ function setId(newId) {
     });
     // highlight the current section
     for (var i = 0; i < sections.length; i++) {
-        sections[i].className = sections[i].id === newId ? 'active' : '';
+        if (sections[i].id === newId) {
+            $(sections[i]).addClass('active');
+        } else {
+            $(sections[i]).removeClass('active');
+        }
     }
     // And then set the new id as the current one,
     // so that we know to do nothing at the beginning
@@ -115,17 +119,15 @@ function getInfo() {
 
     $.getJSON('assets/data/info.json', function(info) {
 
-        console.log(info.destinations);
-
         var Handlebars = require("hbsfy/runtime");
         Handlebars.registerHelper("safe", function(description) {
-          return new Handlebars.SafeString(description)
+          return new Handlebars.SafeString(description);
         });
 
 
         var template = require("./template.hbs");
         $list = template(info);
-        $('.sections').append($list);
+        $('.blocks').append($list);
     });
 }
 

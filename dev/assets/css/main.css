@@ -1319,6 +1319,15 @@ body {
 	font-family: "Source Sans Pro", sans-serif;
 }
 
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	color: #333;
+}
+
 a {
 	text-decoration: none;
 }
@@ -1330,8 +1339,8 @@ a {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-	height: 100vh;
+	height: 212px;
+	z-index: 100;
 }
 
 .leaflet-container .leaflet-control-zoomslider {
@@ -1345,11 +1354,19 @@ a {
 	left: 0;
 	width: 100%;
 	background: #FFF;
-	z-index: 20;
+	z-index: 150;
+	padding: 0 10px;
+	font-size: 1.5rem;
+}
+
+.topbar svg {
+	width: 15px;
+	height: 15px;
 }
 
 .topbar__title {
-	text-align: center;
+	text-align: left;
+	font-size: 1.5rem;
 }
 
 .menu {
@@ -1364,7 +1381,7 @@ a {
 
 .menu__link {
 	display: block;
-	padding: 10px;
+	padding: 17px 10px;
 }
 
 .nav {
@@ -1381,14 +1398,32 @@ a {
 
 #narrative {
 	position: relative;
+	top: 252px;
+	width: 100%;
 	z-index: 5;
 }
 
-section {
-	margin: 10px 10px;
+.expand-map {
+	position: fixed;
+	top: 212px;
+	width: 100%;
+	display: block;
+	background: teal;
+	text-align: center;
+	padding: 10px 0;
+	color: #FFF;
+	z-index: 50;
+}
+
+.blocks {
+	width: 100%;
+}
+
+.block {
+	width: 100%;
 	padding: 10px;
 	border-radius: 3px;
-	box-shadow: 1px 1px 1px 1px #000;
+	box-shadow: 1px 1px 5px 1px #CCC;
 	background: #FFF;
 }
 
@@ -1414,12 +1449,51 @@ section {
 
 @media all and (min-width: 900px) {
 
+#map {
+	width: 120%;
+	width: calc(100% + 450px);
+	height: 100%;
+	height: 100vh;
+	z-index: 1;
+}
+
 .leaflet-container .leaflet-control-zoomslider {
 	display: block;
 	position: fixed;
 	right: 10px;
 	top: 50%;
 	margin-top: -100px;
+}
+
+.topbar {
+	z-index: 20;
+}
+
+.topbar svg {
+	width: 25px;
+	height: 25px;
+}
+
+.topbar__title {
+	font-size: 2rem;
+	text-align: center;
+}
+
+#narrative {
+	top: 52px;
+	width: 400px;
+}
+
+.expand-map {
+	display: none;
+}
+
+.blocks {
+	padding: 0 10px;
+}
+
+.block {
+	margin: 10px 0;
 }
 
 }

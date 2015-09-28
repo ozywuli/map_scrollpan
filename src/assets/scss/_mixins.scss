@@ -4,25 +4,6 @@
 
 
 
-// z-index
-// ==================================================
-
-@function z-index($key) {
-  @return map-get($z-index, $key);
-}
-
-@mixin z-index($key) {
-  z-index: z-index($key);
-}
-
-
-$z-index: (
-  "topbar": 20,
-  "nav": 15,
-  'about': 10,
-  'narrative': 5
-);
-
 
 // Media Queries
 // ==================================================
@@ -49,3 +30,25 @@ $breakpoints: (
   }
 
 }
+
+
+// z-index
+// ==================================================
+
+$z-index: (
+  "topbar": 20,
+  "nav": 15,
+  'about': 10,
+  'narrative': 5
+);
+
+
+@function z-index($key) {
+  @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}
+
+
