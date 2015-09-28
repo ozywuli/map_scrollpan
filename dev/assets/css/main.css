@@ -1334,13 +1334,18 @@ a {
 
 #map {
 	position: fixed;
-	top: 0;
+	top: 39px;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 212px;
-	z-index: 100;
+	height: 172px;
+	z-index: 50;
+}
+
+.expanded #map {
+	height: 100%;
+	height: 100vh;
 }
 
 .leaflet-container .leaflet-control-zoomslider {
@@ -1403,6 +1408,10 @@ a {
 	z-index: 5;
 }
 
+.expanded #narrative {
+	top: 100%;
+}
+
 .expand-map {
 	position: fixed;
 	top: 212px;
@@ -1412,7 +1421,12 @@ a {
 	text-align: center;
 	padding: 10px 0;
 	color: #FFF;
-	z-index: 50;
+	z-index: 100;
+}
+
+.expanded .expand-map {
+	top: auto;
+	bottom: 0;
 }
 
 .blocks {
@@ -1450,6 +1464,7 @@ a {
 @media all and (min-width: 900px) {
 
 #map {
+	top: 0;
 	width: 120%;
 	width: calc(100% + 450px);
 	height: 100%;

@@ -9,6 +9,11 @@
     top: 52px;
     width: 400px;
   }
+
+
+  .expanded & {
+    top: 100%;
+  }
 }
 
 
@@ -21,10 +26,15 @@
   text-align: center;
   padding: 10px 0;
   color: #FFF;
-  z-index: 50;
+  z-index: 100;
 
   @include respond-to('medium') {
     display: none;
+  }
+
+  .expanded & {
+    top: auto;
+    bottom: 0;
   }
 }
 

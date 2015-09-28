@@ -1,11 +1,6 @@
 var debounce = require('./debounce.js');
 
 
-
-
-
-(function() {
-
 module.exports = function() {
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiYW9zaWthIiwiYSI6IjQzRGIxeEkifQ.7OvmyBbXwwt9Qxjlh9Qd3w';
@@ -22,6 +17,19 @@ map.scrollWheelZoom.disable();
 L.control.zoomslider().addTo(map);
 
 
+var expandMap = require('./mobile.js')
+var $expandMap = $('.expand-map');
+$expandMap.on('click', function(e) {
+  e.preventDefault();
+  if ( !$('body').hasClass('expanded') ) {
+    $('body').addClass('expanded');
+    map.invalidateSize();
+  } else {
+    $('body').removeClass('expanded');
+    map.invalidateSize();
+  }
+  
+})
 
 
 $.getJSON('assets/data/destinations.geojson', function(data) {
@@ -136,6 +144,3 @@ function getInfo() {
 
 } // end module export
 
-
-
-})() // end anonymous function wrapper
