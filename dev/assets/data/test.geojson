@@ -1,0 +1,19 @@
+{
+   "type":"FeatureCollection",
+   "features":[
+      {
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -0.12960000,
+               81.50110000
+            ]
+         },
+         "properties":{
+            "id":"cover",
+            "zoom":9
+         },
+         "type":"Feature"
+      }
+   ]
+}

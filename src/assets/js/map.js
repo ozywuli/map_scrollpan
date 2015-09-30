@@ -32,6 +32,15 @@ $expandMap.on('click', function(e) {
 })
 
 
+$.getJSON('assets/data/test.geojson', function(data) {
+
+console.log(data);
+var placesLayer = L.mapbox.featureLayer(data)
+    .addTo(map);
+
+})
+
+
 $.getJSON('assets/data/destinations.geojson', function(data) {
 
 var placesLayer = L.mapbox.featureLayer(data)
@@ -56,10 +65,12 @@ function setId(newId) {
             layer.setIcon(L.mapbox.marker.icon({
                 'marker-color': '#a8f'
             }));
+            
         } else {
             layer.setIcon(L.mapbox.marker.icon({
                 'marker-color': '#404040'
             }));
+
         }
     });
     // highlight the current section
@@ -113,6 +124,8 @@ placesLayer.eachLayer(function(layer) {
         $('html, body').animate({
             scrollTop: $listItem.offset().top - 50
         });
+        $('body').removeClass('expanded');
+        map.invalidateSize();
     });
 });
 
@@ -129,7 +142,7 @@ function getInfo() {
 
         var Handlebars = require("hbsfy/runtime");
         Handlebars.registerHelper("safe", function(description) {
-          return new Handlebars.SafeString(description);
+          return new Handlebars.SafeString(description)
         });
 
 
