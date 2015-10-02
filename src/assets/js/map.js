@@ -87,9 +87,23 @@ function setId(newId) {
     currentId = newId;
 }
 
-// If you were to do this for real, you would want to use
-// something like underscore's _.debounce function to prevent this
-// call from firing constantly.
+
+$('.nav').on('click', '.nav__link',function(e) {
+    e.preventDefault();
+    var newId = $(this).attr('data-id');
+    console.log(newId);
+    setId(newId);
+
+    $('.nav').removeClass('nav--active');
+
+    var $listItem = $('.active');
+    $('html, body').animate({
+        scrollTop: $listItem.offset().top - 50
+    });
+    $('body').removeClass('expanded');
+    map.invalidateSize();
+
+})
 
 
 var panDebounce = debounce(function() {
@@ -149,8 +163,16 @@ function getInfo() {
         var template = require("./template.hbs");
         $list = template(info);
         $('.blocks').append($list);
+
+        var navTemplate = require('./nav.hbs');
+        $navList = navTemplate(info);
+        $('.nav').append($navList);
+
+
+
     });
 }
+
 
 
 

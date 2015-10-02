@@ -1386,26 +1386,38 @@ a {
 
 .menu__link {
 	display: block;
-	padding: 12px 10px;
+	padding: 17px 10px;
 }
 
 .menu__link span {
 	display: inline-block;
 	vertical-align: top;
 	margin-left: 5px;
-	line-height: 2.5rem;
+	line-height: 1.5rem;
 }
 
 .nav {
 	position: fixed;
+	top: 52px;
 	right: 0;
 	display: block;
 	width: 300px;
 	height: 100%;
 	background: #FFF;
+	padding: 20px 10px;
 	z-index: 15;
 	-webkit-transform: translate3d(100%, 0, 0);
 	transform: translate3d(100%, 0, 0);
+}
+
+.nav--active {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.nav__link {
+	display: block;
+	color: #000;
 }
 
 #narrative {
@@ -1501,8 +1513,8 @@ a {
 }
 
 .topbar svg {
-	width: 25px;
-	height: 25px;
+	width: 15px;
+	height: 15px;
 }
 
 .topbar__title {
