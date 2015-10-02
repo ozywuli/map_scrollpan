@@ -44,12 +44,16 @@
     }
       .menu__link {
         display: block;
-        padding: 17px 10px;
+        padding: 10px;
 
         span {
           display: inline-block;
           vertical-align: top;
           margin-left: 5px;
           line-height: 1.5rem;
+        }
+
+        @include respond-to('medium') {
+          padding: 17px 10px;
         }
       }

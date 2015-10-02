@@ -12,7 +12,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYW9zaWthIiwiYSI6IjQzRGIxeEkifQ.7OvmyBbXwwt9Qx
 
 var map = L.mapbox.map('map', 'mapbox.streets', {
     zoomControl: false
-});
+}).setView([40, 10], 5);
 map.scrollWheelZoom.disable();
 L.control.zoomslider().addTo(map);
 
@@ -60,8 +60,10 @@ function setId(newId) {
     // Otherwise, iterate through layers, setting the current
     // marker to a different color and zooming to it.
     placesLayer.eachLayer(function(layer) {
-        if (layer.feature.properties.id === newId) {
-            map.setView(layer.getLatLng(), layer.feature.properties.zoom || 14);
+        console.log(layer.feature.properties.title.toLowerCase().replace(/\s/g, '-'));
+        var markerTitle = layer.feature.properties.title.toLowerCase().replace(/\s/g, '-');
+        if (markerTitle === newId) {
+            map.setView(layer.getLatLng(), layer.feature.properties.zoom || 5);
             layer.setIcon(L.mapbox.marker.icon({
                 'marker-color': '#a8f'
             }));
@@ -133,7 +135,7 @@ panDebounce();
 
 placesLayer.eachLayer(function(layer) {
     layer.on('click', function() {
-        setId(this.feature.properties.id);
+        setId(this.feature.properties.title.toLowerCase().replace(/\s/g, '-'));
         var $listItem = $('.active');
         $('html, body').animate({
             scrollTop: $listItem.offset().top - 50
@@ -156,7 +158,7 @@ function getInfo() {
 
         var Handlebars = require("hbsfy/runtime");
         Handlebars.registerHelper("safe", function(description) {
-          return new Handlebars.SafeString(description)
+          return new Handlebars.SafeString(description);
         });
 
 

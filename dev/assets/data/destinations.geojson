@@ -2,122 +2,176 @@
    "type":"FeatureCollection",
    "features":[
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.12960000,
-               51.50110000
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"cover",
-            "zoom":9
+            "id":"marker-if96gnh08",
+            "title":"Battle of Zama",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               9.678955,
+               36.040215
+            ],
+            "type":"Point"
+         },
+         "id":"316994fbba055d2984da57c8218e9478"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.15591514,
-               51.51830379
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"baker"
+            "id":"marker-if95vxwt2",
+            "title":"Battle of Ticinus",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               8.778076,
+               45.321254
+            ],
+            "type":"Point"
+         },
+         "id":"331d5164d0d92a5d78f109cad0c6858f"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.07571203,
-               51.51424049
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"aldgate"
+            "id":"marker-if963e6p4",
+            "title":"Battle of Lake Trasimene",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               12.08496,
+               43.19116
+            ],
+            "type":"Point"
+         },
+         "id":"601c1cff2def246712eed74c8c9d0ef1"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.08533793,
-               51.50438536
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"london-bridge"
+            "id":"marker-if96a5kx6",
+            "title":"Battle of Cannae",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               16.127929,
+               41.162113
+            ],
+            "type":"Point"
+         },
+         "id":"aaae19549d17f6fe84cfaaf43c0f4147"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               0.05991101,
-               51.48752939
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"woolwich"
+            "id":"marker-if95qyi71",
+            "title":"Saguntum",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               -0.277748,
+               39.679183
+            ],
+            "type":"Point"
+         },
+         "id":"ba2bdf4e8bbeb23d028ce8e226bc00db"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.18335806,
-               51.49439521
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"gloucester"
+            "id":"marker-if964ku15",
+            "title":"Capua",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               14.208583,
+               41.11014
+            ],
+            "type":"Point"
+         },
+         "id":"bd67a85a86de36a62305565cbf728535"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.19684993,
-               51.5033856
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"caulfield-gardens"
+            "id":"marker-if95no9l0",
+            "title":"Cartagena",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               -1.021728,
+               37.631634
+            ],
+            "type":"Point"
+         },
+         "id":"d90bbdece9865053a9f894d4a2f73daa"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.10669358,
-               51.51433123
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"telegraph"
+            "id":"marker-if9600hc3",
+            "title":"Battle of Trebia",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               9.404296,
+               44.606112
+            ],
+            "type":"Point"
+         },
+         "id":"f55cca58be3cfed34ed932a37eb0e400"
       },
       {
-         "geometry":{
-            "type":"Point",
-            "coordinates":[
-               -0.12416858,
-               51.50779757
-            ]
-         },
+         "type":"Feature",
          "properties":{
-            "id":"charing-cross"
+            "id":"marker-if96eo3k7",
+            "title":"Croton",
+            "description":"",
+            "marker-size":"medium",
+            "marker-color":"#1087bf",
+            "marker-symbol":""
          },
-         "type":"Feature"
+         "geometry":{
+            "coordinates":[
+               17.120819,
+               39.071445
+            ],
+            "type":"Point"
+         },
+         "id":"fbefe6ab2cf57c45f96d7d9573312214"
       }
-   ]
+   ],
+   "id":"aosika.njgempp6"
 }

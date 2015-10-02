@@ -9,20 +9,24 @@ var aboutPageActive = 'about-page--active'
 $aboutToggle.on('click', function(e) {
 
 
-  if ( $aboutPage.hasClass(aboutPageActive) ) {
+  if ( $('body').hasClass(aboutPageActive) ) {
     e.preventDefault();
-    $aboutPage.removeClass(aboutPageActive);
+    $('body').removeClass(aboutPageActive);
   } else {
     e.preventDefault();
-    $aboutPage.addClass(aboutPageActive);
+    $('body').addClass(aboutPageActive);
   }
 
 });
 
+$aboutPage.on('click', function(e) {
+  e.preventDefault();
 
-if (window.location.hash === '#about') {
-  $aboutPage.addClass(aboutPageActive);
-}
+  if ( !$('.about-content').is(e.target) && !$('.about-content').find('*').is(e.target) ) {
+    $('body').removeClass(aboutPageActive);
+  }
+
+});
 
 
 
