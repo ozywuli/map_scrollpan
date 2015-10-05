@@ -90,12 +90,6 @@ gulp.task('js', function() {
 });
 
 
-
-
-
-
-
-
 gulp.task('js-build', function() {
     return gulp.src('dev/assets/js/*')
     .pipe(streamify(uglify('main.min.js')))

@@ -2,56 +2,56 @@
   "destinations":[
 {
   "id": "cartagena",
-  "title": "John",
-  "imgSrc": "http://placehold.it/400x200",
+  "title": "Cartagena",
+  "imgSrc": "assets/img/cartagena.jpg",
   "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad.</p>"
 },
 {
   "id": "saguntum",
-  "title": "John",
-  "imgSrc": "http://placehold.it/400x200",
+  "title": "Siege of Saguntum",
+  "imgSrc": "assets/img/saguntum.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "battle-of-ticinus",
-  "title": "John",
+  "title": "Battle of Ticinus",
   "imgSrc": "http://placehold.it/400x200",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "battle-of-trebia",
-  "title": "John",
+  "title": "Battle of Trebia",
   "imgSrc": "http://placehold.it/400x200",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "battle-of-trasimene",
-  "title": "John",
-  "imgSrc": "http://placehold.it/400x200",
+  "title": "Battle of Trasimene",
+  "imgSrc": "assets/img/trasimene.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "capua",
-  "title": "John",
-  "imgSrc": "http://placehold.it/400x200",
+  "title": "Capua",
+  "imgSrc": "assets/img/capua.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "battle-of-cannae",
-  "title": "John",
-  "imgSrc": "http://placehold.it/400x200",
+  "title": "Battle of Cannae",
+  "imgSrc": "assets/img/cannae.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "croton",
-  "title": "John",
+  "title": "Croton",
   "imgSrc": "http://placehold.it/400x200",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "battle-of-zama",
-  "title": "John",
-  "imgSrc": "http://placehold.it/400x200",
+  "title": "Battle of Zama",
+  "imgSrc": "assets/img/zama.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 }
 

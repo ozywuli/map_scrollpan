@@ -1496,8 +1496,19 @@ a {
 }
 
 .cover {
+	min-height: 380px;
+	background: url("../img/zama_cover.jpg");
+	background-size: cover;
+	background-position: center center;
 	padding: 10px 0 20px 0;
 	text-align: center;
+	color: #FFF;
+	display: table;
+}
+
+.vcenter {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .about-page--active {
