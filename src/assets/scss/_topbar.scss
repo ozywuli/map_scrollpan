@@ -79,6 +79,12 @@
           }
         }
 
+        &:active {
+          &:after {
+            height: 6px;
+          }
+        }
+
         @include respond-to('medium') {
           padding: 17px 10px;
         }

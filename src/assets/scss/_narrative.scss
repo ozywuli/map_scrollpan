@@ -1,6 +1,6 @@
 #narrative {
   position: relative;
-  top: 252px;
+  top: 250px;
   width: 100%;
 
   @include z-index('narrative');
@@ -19,7 +19,7 @@
 
 .expand-map {
   position: fixed;
-  top: 212px;
+  top: 210px;
   width: 100%;
   display: block;
   background: teal;
@@ -42,20 +42,31 @@
   width: 100%;
   margin-bottom: 200px;
 
+
   @include respond-to('medium') {
     padding: 0 10px;
   }
 }
 
+
+
 .block {
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
+  border-top: 3px solid $accent;
   border-radius: 3px;
-  box-shadow: 1px 1px 5px 1px #CCC;
+  box-shadow: 1px 3px 8px -2px #333;
   background: #FFF;
+  opacity: 0.7;
+  transition: all 150ms ease;
+
+  &:hover {
+    border-top: 3px solid $accent;
+  }
 
   @include respond-to('medium') {
     margin: 10px 0;
+    padding: 10px;
   }
 }
   .block__title {
@@ -66,16 +77,32 @@
     width: 100%;
   }
 
-
+.active {
+  opacity: 1;
+}
 .cover {
   min-height: 380px;
   background: url('../img/zama_cover.jpg');
   background-size: cover;
   background-position: center center;
+  border: none;
   padding: 10px 0 20px 0;
   text-align: center;
   color: #FFF;
   display: table;
+
+  svg {
+    margin-top: 20px;
+  }
+
+  polygon {
+    fill: #FFF;
+  }
+
+  &:hover {
+    border: none;
+  }
+
 }
   .vcenter {
     display: table-cell;
