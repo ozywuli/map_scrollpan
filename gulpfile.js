@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var del = require('del');
 var fileinclude = require('gulp-file-include');
 var minifyHTML = require('gulp-minify-html');
+var htmlreplace = require('gulp-html-replace');
 var sass = require('gulp-sass');
 var neat = require('node-neat').includePaths;
 var autoprefixer = require('gulp-autoprefixer');
@@ -19,6 +20,7 @@ var source = require('vinyl-source-stream');
 var browserify = require('browserify');
 var watchify = require('watchify');
 var streamify = require('gulp-streamify');
+var jsonminify = require('gulp-jsonminify');
 
 var hbsfy = require('hbsfy');
 
@@ -71,7 +73,6 @@ gulp.task('css', function() {
 
 gulp.task('css-build', function() {
     return gulp.src('dev/assets/css/*')
-        .pipe( rename({suffix: '.min'}) )
         .pipe( minifycss() )
         .pipe( gulp.dest('dist/assets/css') )
 });
@@ -102,11 +103,22 @@ gulp.task('data', function() {
   return gulp.src('src/assets/data/*')
     .pipe( gulp.dest('dev/assets/data') )
 });
+gulp.task('data-build', function() {
+  return gulp.src('dev/assets/data/*')
+    .pipe(jsonminify())
+    .pipe( gulp.dest('dist/assets/data') )
+})
 
 
+// Images
 gulp.task('img', function() {
-  return gulp.src('src/assets/img/**/*')
+  return gulp.src('src/assets/img/*.jpg')
     .pipe(gulp.dest('dev/assets/img'))
+});
+gulp.task('img-build', function() {
+  return gulp.src('dev/assets/img/**')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/assets/img'))
 });
 
 
@@ -160,6 +172,6 @@ gulp.task('watch', function() {
 
 // Deploy... great success!
 gulp.task('build', function() {
-    gulp.start('html-build', 'css-build', 'js-build');
+    gulp.start('html-build', 'css-build', 'js-build', 'data-build', 'img-build');
 });
 
