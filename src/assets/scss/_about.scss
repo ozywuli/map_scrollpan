@@ -3,7 +3,6 @@
 }
 
 .about-page {
-  display: table;
   position: fixed;
   top: 0;
   right: 0;
@@ -14,8 +13,10 @@
   width: 100%;
   height: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.95);
   z-index: 125;
+  transform: scale(0.8);
+  transition: all 150ms ease;
   @include respond-to('medium') {
     @include z-index('about');
   }
@@ -23,6 +24,7 @@
   .about-page--active & {
     opacity: 1;
     visibility: visible;
+    transform: scale(1);
   }
 
   &:hover {
@@ -33,21 +35,31 @@
 
 
 .about-modal {
-  display: table-cell;
-  vertical-align: middle;
   position: relative;
   height: 100%;
+  overflow: auto;
+}
+.about-banner {
+  margin-top: 52px;
+  width: 100%;
+  height: 400px;
+  background: url('../img/zama_banner.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 .about-content {
-  margin: 0 auto;
-  padding: 40px;
-  max-width: 800px;
-  height: 500px;
-  background: #FFF;
-  border-radius: 3px;
-  overflow-y: scroll;
 
+  min-height: 100%;
   &:hover {
     cursor: initial;
   }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
+.about-des {
+  padding: 40px;
+  max-width: 750px;
+  margin: 0 auto;
 }

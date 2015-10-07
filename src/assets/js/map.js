@@ -100,7 +100,7 @@ $('.nav').on('click', '.nav__link',function(e) {
 
     var $listItem = $('.active');
     $('html, body').animate({
-        scrollTop: $listItem.offset().top - 50
+        scrollTop: $listItem.offset().top + 50
     });
     $('body').removeClass('expanded');
     map.invalidateSize();
@@ -138,7 +138,7 @@ placesLayer.eachLayer(function(layer) {
         setId(this.feature.properties.title.toLowerCase().replace(/\s/g, '-'));
         var $listItem = $('.active');
         $('html, body').animate({
-            scrollTop: $listItem.offset().top - 50
+            scrollTop: $listItem.offset().top - 150
         });
         $('body').removeClass('expanded');
         map.invalidateSize();

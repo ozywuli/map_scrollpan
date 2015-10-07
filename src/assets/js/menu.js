@@ -13,11 +13,10 @@ $navToggle.on('click', function(e) {
 
 
 $('html, body').on('click', function(e) {
-  console.log(e.target);
   if ( !$nav.is(e.target) && !$nav.find('*').is(e.target) && !$navToggle.is(e.target) && !$navToggle.find('*').is(e.target) ) {
     $nav.removeClass('nav--active');
   }
-})
+});
 
 
 }

@@ -15,13 +15,13 @@
 {
   "id": "battle-of-ticinus",
   "title": "Battle of Ticinus",
-  "imgSrc": "http://placehold.it/400x200",
+  "imgSrc": "assets/img/ticino.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
   "id": "battle-of-trebia",
   "title": "Battle of Trebia",
-  "imgSrc": "http://placehold.it/400x200",
+  "imgSrc": "assets/img/trebia.jpg",
   "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
 },
 {
