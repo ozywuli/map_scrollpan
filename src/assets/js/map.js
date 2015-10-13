@@ -10,7 +10,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiYW9zaWthIiwiYSI6IjQzRGIxeEkifQ.7OvmyBbXwwt9Qx
 // map and the data.
 
 
-var map = L.mapbox.map('map', 'mapbox.streets', {
+var map = L.mapbox.map('map', 'aosika.nmgjmb1b', {
     zoomControl: false
 }).setView([40, 10], 5);
 map.scrollWheelZoom.disable();
@@ -65,7 +65,7 @@ function setId(newId) {
         if (markerTitle === newId) {
             map.setView(layer.getLatLng(), layer.feature.properties.zoom || 5);
             layer.setIcon(L.mapbox.marker.icon({
-                'marker-color': '#a8f'
+                'marker-color': '#008080'
             }));
             
         } else {
@@ -177,6 +177,17 @@ function getInfo() {
 
 
 
+
+// Create array of lat,lon points.
+var line_points = [
+[37.735969,-1.010742],[39.825413,-0.329589],[41.228249,0.966796],[41.951319,2.834472],[42.811521,2.834472],[43.659924,3.120117],[45.706179,4.21875],[45.966424,6.569824],[45.413876,8.591308],[44.746733,9.338378],[43.405047,11.799316],[41.360318,14.040527],[41.49212,16.083984],[39.35129,16.831054],[39.164141,17.929687],[36.22655,15.336914],[36.173356,9.689941]
+];
+
+var polyline_options = {
+    color: '#FFF'
+};
+
+var polyline = L.polyline(line_points, polyline_options).addTo(map);
 
 
 } // end module export
