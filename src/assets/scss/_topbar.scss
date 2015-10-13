@@ -77,6 +77,10 @@
           background: #f1f1f1;
           color: $accent;
 
+          path {
+            fill: $accent;
+          }
+
           &:after {
             height: 3px;
           }

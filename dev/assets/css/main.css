@@ -1426,6 +1426,10 @@ a:hover {
 	color: teal;
 }
 
+.menu__link:hover path {
+	fill: teal;
+}
+
 .menu__link:hover:after {
 	height: 3px;
 }
@@ -1525,6 +1529,7 @@ a:hover {
 }
 
 .block p {
+	margin-bottom: 10px;
 	font-size: 1.5rem;
 }
 

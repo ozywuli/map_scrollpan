@@ -46,16 +46,13 @@
   "id": "croton",
   "title": "Battle of Croton",
   "imgSrc": "assets/img/croton.jpg",
-  "description": "Though Hannibal managed to lift the siege of Capua, his fortunes took a turn for the worse in the ensuing years. By 204 BC Romans were clearly winning the war. The Battle of Croton would be the last larger scale engagements between the Romans and the Carthaginians in Italy during the Second Punic War. After Hannibal’s retreat to Bruttium due to the Metaurus debacle, the Romans tried continuously to insulate his forces from the Ionion Sea and cut his eventual escape to Carthage by capturing Croton. The Carthaginian commander struggled to retain his hold on the last efficient port which had remained in his hands after years of fighting and was ultimately successful."
+  "description": "<p>Though Hannibal managed to lift the siege of Capua, his fortunes took a turn for the worse in the ensuing years. By 204 BC Romans were clearly winning the war. The Battle of Croton would be the last larger scale engagements between the Romans and the Carthaginians in Italy during the Second Punic War. After Hannibal’s retreat to Bruttium due to the Metaurus debacle, the Romans tried continuously to insulate his forces from the Ionion Sea and cut his eventual escape to Carthage by capturing Croton. The Carthaginian commander struggled to retain his hold on the last efficient port which had remained in his hands after years of fighting and was ultimately successful.</p>"
 },
 {
   "id": "battle-of-zama",
   "title": "Battle of Zama",
   "imgSrc": "assets/img/zama.jpg",
-  "description": "<p>Having failed to defeat Hannibal or drive him from Italy, the Romans changed strategy and decided to attack Carthage, forcing the Carthaginians to recall Hannibal. He was still in Italy, although confined to the south of the peninsula, when Scipio landed in Africa in 203 BC.</p>
-    <p>The Battle of Zama, fought around October 19, 202 BC, marked the end of the Second Punic War. A Roman army led by Publius Cornelius Scipio Africanus (Scipio) defeated a Carthaginian force led by the commander Hannibal. Despite Hannibal possessing numerical superiority, Scipio conceived a strategy to confuse and defeat his war elephants. Scipio's troops then routed the Carthaginian infantry, thanks in part to superior Roman cavalry.</p>
-    <p>Soon after this defeat on their home ground, the Carthaginian senate sued for peace, which was given to them by the Roman Republic on rather humiliating terms, ending the 17-year war.</p>
-  "
+  "description": "<p>Having failed to defeat Hannibal or drive him from Italy, the Romans changed strategy and decided to attack Carthage, forcing the Carthaginians to recall Hannibal. He was still in Italy, although confined to the south of the peninsula, when Scipio landed in Africa in 203 BC.</p><p>The Battle of Zama, fought around October 19, 202 BC, marked the end of the Second Punic War. A Roman army led by Publius Cornelius Scipio Africanus (Scipio) defeated a Carthaginian force led by the commander Hannibal. Despite Hannibal possessing numerical superiority, Scipio conceived a strategy to confuse and defeat his war elephants. Scipio's troops then routed the Carthaginian infantry, thanks in part to superior Roman cavalry.</p><p>Soon after this defeat on their home ground, the Carthaginian senate sued for peace, which was given to them by the Roman Republic on rather humiliating terms, ending the 17-year war.</p>"
 }
 
 ]}
