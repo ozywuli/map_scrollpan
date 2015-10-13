@@ -1331,6 +1331,11 @@ body {
 
 a {
 	text-decoration: none;
+	color: teal;
+}
+
+a:hover {
+	color: #00e6e6;
 }
 
 #map {
@@ -1394,6 +1399,7 @@ a {
 	padding: 10px;
 	font-size: 1.5rem;
 	transition: all 150ms ease;
+	color: #000;
 }
 
 .menu__link span {
@@ -1417,6 +1423,7 @@ a {
 
 .menu__link:hover {
 	background: #f1f1f1;
+	color: teal;
 }
 
 .menu__link:hover:after {
@@ -1515,6 +1522,10 @@ a {
 	background: #FFF;
 	opacity: 0.7;
 	transition: all 150ms ease;
+}
+
+.block p {
+	font-size: 1.5rem;
 }
 
 .block:hover {
@@ -1643,6 +1654,16 @@ a {
 	padding: 40px;
 	max-width: 750px;
 	margin: 0 auto;
+}
+
+.citation {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #d1d1d1;
+	padding-bottom: 40px;
+}
+
+.citation li {
+	margin-bottom: 20px;
 }
 
 @media all and (min-width: 800px) {

@@ -4,55 +4,58 @@
   "id": "cartagena",
   "title": "Cartagena",
   "imgSrc": "assets/img/cartagena.jpg",
-  "description": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad.</p>"
+  "description": "<p>Originally named <a href='https://en.wikipedia.org/wiki/Mastia' target='_blank'>Mastia</a>, it was re-founded by the Carthaginian general <a href='https://en.wikipedia.org/wiki/Hasdrubal_the_Fair' target='_blank'>Hasdrubal</a> in 228 BC as Qart Hadasht (\"New City\"), identically named to Carthage, for the purpose of serving as a stepping-off point for the conquest of the Iberian peninsula. Under the command of Hannibal, the Carthaginians successfully reduced all of Iberia south of the Ebro to subjection, excepting the city of Saguntum, which, under the aegis of Rome, was outside of his immediate plans. Catalonia and Saguntum were now the only areas of the peninsula not in Hannibal's possession.</p>"
 },
 {
   "id": "saguntum",
   "title": "Siege of Saguntum",
   "imgSrc": "assets/img/saguntum.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
+  "description": "<p>During Hannibal's assault on Saguntum he suffered some losses due to the extensive fortifications and the tenacity of the defending Saguntines, but his troops stormed and destroyed the city's defenses one at a time. The Saguntines turned to Rome for aid, but none was sent. In 218 BC after enduring eight months of siege the Saguntines' last defences were finally overrun. Hannibal offered to spare the population on condition that they were \"willing to depart from Saguntum, unarmed, each with two garments\". When they declined the offer and began to sabotage the town's wealth and possessions, every adult was put to death</p>"
 },
 {
   "id": "battle-of-ticinus",
   "title": "Battle of Ticinus",
   "imgSrc": "assets/img/ticino.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
+  "description": "<p>With the Iberian peninsula secured, Hannibal marched his army across the Alps and advanced south towards the banks of the Ticinus River, where a Roman army led by Scipio laid in wait. It was the first battle of the war against the Romans that was fought on Italian soil and the first battle of the war to employ legion-sized forces. Its loss by the Romans, and the temporary disablement of Scipio's command, set the stage for the Roman disaster at the Battle of Trebia.</p>"
 },
 {
   "id": "battle-of-trebia",
   "title": "Battle of Trebia",
   "imgSrc": "assets/img/trebia.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
+  "description": "<p>The Battle of the Trebia (or Trebbia) was the first major battle of the Second Punic War. It was a resounding Roman defeat with heavy losses, and yet some 10,000 and more Romans, over 2.5 legions, survived on the field and retreated to Placentia (<a href=\"https://en.wikipedia.org/wiki/Piacenza\" target='_blank'>Piacenza</a>). In this battle, Hannibal got the better of the Romans by exercising the careful and innovative planning for which he was famous. The impetuous and short-sighted opposing general, the consul <a href=\"https://en.wikipedia.org/wiki/Tiberius_Sempronius_Longus_%28consul_218_BC%29\" target='_blank'>Tiberius Sempronius Longus</a>, allowed himself to be provoked into a frontal assault under physically difficult circumstances and failed to see that he was being led into a trap.</p>"
 },
 {
   "id": "battle-of-lake-trasimene",
   "title": "Battle of Lake Trasimene",
   "imgSrc": "assets/img/trasimene.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
-},
-{
-  "id": "capua",
-  "title": "Capua",
-  "imgSrc": "assets/img/capua.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
+  "description": "<p>The Carthaginians under Hannibal defeated the Romans under the consul <a href='https://en.wikipedia.org/wiki/Gaius_Flaminius_Nepos' target='_blank'>Gaius Flaminius</a>. Hannibal’s victory over the Roman army at Lake Trasimene remains, in terms of the number of men involved, the largest ambush in military history. In the prelude to the battle, Hannibal also achieved the earliest known example of a strategic <a href='https://en.wikipedia.org/wiki/Turning_movement' target='_blank'>turning movement</a>.</p>"
 },
 {
   "id": "battle-of-cannae",
   "title": "Battle of Cannae",
   "imgSrc": "assets/img/cannae.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
+  "description": "<p>Having recovered from their losses at Trebia and Lake Trasimene, the Romans decided to engage Hannibal at Cannae, with roughly 86,000 Roman and allied troops. The Romans massed their heavy infantry in a deeper formation than usual, while Hannibal utilized the double-envelopment tactic. This was so successful that the Roman army was effectively destroyed as a fighting force. Following the defeat, Capua and several other Italian city-states defected from the Roman Republic to Carthage.</p>"
+},
+{
+  "id": "capua",
+  "title": "Capua",
+  "imgSrc": "assets/img/capua.jpg",
+  "description": "<p>Capua had defected to Hannibal after the Battle of Cannae, and Hannibal had made Capua his winter quarter and from there conducted his campaigns against Nola and Casilinum. The elected consuls, Appius Claudius and Quintus Fulvius Flaccus resolved to besiege Capua. The Roman force was defeated, but managed to escape.</p>"
 },
 {
   "id": "croton",
-  "title": "Croton",
+  "title": "Battle of Croton",
   "imgSrc": "assets/img/croton.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
+  "description": "Though Hannibal managed to lift the siege of Capua, his fortunes took a turn for the worse in the ensuing years. By 204 BC Romans were clearly winning the war. The Battle of Croton would be the last larger scale engagements between the Romans and the Carthaginians in Italy during the Second Punic War. After Hannibal’s retreat to Bruttium due to the Metaurus debacle, the Romans tried continuously to insulate his forces from the Ionion Sea and cut his eventual escape to Carthage by capturing Croton. The Carthaginian commander struggled to retain his hold on the last efficient port which had remained in his hands after years of fighting and was ultimately successful."
 },
 {
   "id": "battle-of-zama",
   "title": "Battle of Zama",
   "imgSrc": "assets/img/zama.jpg",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, pariatur, porro. Officia quasi quisquam ut eveniet nam amet, qui! Est fugiat eum aperiam rerum enim dolor voluptate. Corporis, ipsa, ad."
+  "description": "<p>Having failed to defeat Hannibal or drive him from Italy, the Romans changed strategy and decided to attack Carthage, forcing the Carthaginians to recall Hannibal. He was still in Italy, although confined to the south of the peninsula, when Scipio landed in Africa in 203 BC.</p>
+    <p>The Battle of Zama, fought around October 19, 202 BC, marked the end of the Second Punic War. A Roman army led by Publius Cornelius Scipio Africanus (Scipio) defeated a Carthaginian force led by the commander Hannibal. Despite Hannibal possessing numerical superiority, Scipio conceived a strategy to confuse and defeat his war elephants. Scipio's troops then routed the Carthaginian infantry, thanks in part to superior Roman cavalry.</p>
+    <p>Soon after this defeat on their home ground, the Carthaginian senate sued for peace, which was given to them by the Roman Republic on rather humiliating terms, ending the 17-year war.</p>
+  "
 }
 
 ]}

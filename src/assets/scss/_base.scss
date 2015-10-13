@@ -16,5 +16,10 @@ body {
 
 a {
   text-decoration: none;
+  color: $accent;
+
+  &:hover {
+    color: $accent-hover;
+  }
 }
 
